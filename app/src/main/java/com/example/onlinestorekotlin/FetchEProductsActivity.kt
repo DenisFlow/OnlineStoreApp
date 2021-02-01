@@ -34,9 +34,9 @@ class FetchEProductsActivity : AppCompatActivity() {
 
             }
 
-//            val pAdapter = EProductAdapter(this@FetchEProductsActivity, productsList)
-//            productsRV.layoutManager  = LinearLayoutManager(this@FetchEProductsActivity)
-//            productsRV.adapter = pAdapter
+            val pAdapter = EProductAdapter(this@FetchEProductsActivity, productsList)
+            productsRV.layoutManager  = LinearLayoutManager(this@FetchEProductsActivity)
+            productsRV.adapter = pAdapter
 
         }, Response.ErrorListener { error ->
             val ddialogBuilder = AlertDialog.Builder(this)

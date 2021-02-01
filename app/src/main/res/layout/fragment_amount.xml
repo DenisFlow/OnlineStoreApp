@@ -4,20 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".AmountFragment"
     android:orientation="vertical"
-    tools:context=".FetchEProductsActivity">
+    >
 
-    <TextView
-        android:id="@+id/txtBrandName"
+
+    <EditText
+        android:id="@+id/edt_enter_amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#FF9800"
-        android:textSize="30sp" />
+        android:ems="10"
+        android:hint="Enter amount..."
+        android:inputType="textPersonName"
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/productsRV"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        />
+
+    <ImageButton
+        android:id="@+id/image_button"
+        android:layout_width="249dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:src="@drawable/addtocart" />
 
 </LinearLayout>
